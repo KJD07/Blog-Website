@@ -1,0 +1,18 @@
+<%- include("partials/header") -%>
+
+<h1>Home</h1>
+<p><%=details%></p>
+
+
+
+<form action="/" method="post">
+  <%post.forEach(function(each){%>
+    <%if(each.post.length > 100){%>
+      <% var fullArticle = each.post.substr(0,100);%>
+    <%}%>
+    <h1><%=each.title%></h1>
+    <p><%=fullArticle%><a href="/blog/<%=each.title%>">...Read More</a></p>
+  <%})%>
+</form>
+
+<%- include("partials/footer") -%>

@@ -1,0 +1,26 @@
+<%- include("partials/header") -%>
+
+<h1>Compose your Article</h1>
+
+<form class="" action="/composemyarticle" method="post">
+  <table>
+    <tr>
+      <td><label for="">Title</label></td>
+    </tr>
+    <tr>
+      <td><input class="titlebox" type="text" name="title" placeholder="Title" autocomplete="off"></td>
+    </tr>
+    <tr>
+      <td><label for="">Post</label></td>
+    </tr>
+    <tr>
+      <td><textarea rows="5" cols="80" name="text" placeholder="Enter text"></textarea></td>
+    </tr>
+    <tr>
+      <td><button class="publishwala btn btn-md btn-primary" type="submit" name="button">Publish</button></td>
+    </tr>
+  </table>
+
+</form>
+
+<%- include("partials/footer") -%>
